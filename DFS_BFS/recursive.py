@@ -28,3 +28,13 @@ def factorial_recursive(n):
 # 각각의 방식으로 구현한 n! 출력 (n = 5)
 print('반복적으로 구현: ', factorial_iterative(5))
 print('재귀적으로 구현: ', factorial_recursive(5))
+
+
+# 유클리드 호제법
+def gcd(a, b):
+    if a % b == 0:
+        return b
+    else:
+        return gcd(b, a % b)
+
+print(gcd(192, 162))
