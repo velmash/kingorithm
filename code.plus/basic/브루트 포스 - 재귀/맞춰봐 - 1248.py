@@ -1,6 +1,6 @@
 def check(index):
     s = 0
-    for i in range(index -1, -1):
+    for i in range(index - 1, -1):
         s += ans[i]
         if sign[i][index] == 0:
             if s != 0:
@@ -12,6 +12,7 @@ def check(index):
             if s <= 0:
                 return False
     return True
+
 
 def go(index):
     if index == n:
@@ -27,10 +28,11 @@ def go(index):
 
     return False
 
+
 n = int(input())
 s = input()
-sign = [[0]*n for _ in range(n)]
-ans = [0]*n
+sign = [[0] * n for _ in range(n)]
+ans = [0] * n
 cnt = 0
 for i in range(n):
     for j in range(i, n):
