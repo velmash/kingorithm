@@ -154,7 +154,7 @@ from itertools import permutations
 
 data = ['A', 'B', 'C']
 
-result = list(permutations(data, 3)) # 모든 순열 구하기
+result = list(permutations(data, 3)) # 모든 브루트 포스 - 순열 구하기
 print(result)
 
 from itertools import combinations
@@ -162,9 +162,9 @@ result = list(combinations(data, 2)) # 2개를 뽑는 모든 조합 구하기
 print(result)
 
 
-# 중복 순열
+# 중복 브루트 포스 - 순열
 from itertools import product
-result = list(product(data, repeat=2)) # 2개를 뽑는 모든 순열 구하기(중복 허용)
+result = list(product(data, repeat=2)) # 2개를 뽑는 모든 브루트 포스 - 순열 구하기(중복 허용)
 
 # 중복 조합
 from itertools import combinations_with_replacement
